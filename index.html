@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 향</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main1.css">   <!-- main1 CSS -->
+    <link rel="stylesheet" href="css/main2.css">   <!-- main2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- 부트스트랩 아이콘 사용가능-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">    <!-- 부트스트랩 CSS 사용가능 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">  <!-- 부트스트랩 부가적 테마 사용가능 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> <!-- 부트스트랩 JS 사용가능 -->
+   
+</head>
+<body>
+    <header class="header">
+        <h1>내 향</h1>
+        <div class="search">
+          <input type="text" placeholder="검색어를 입력하세요">
+          <button type="submit">검색</button>
+        </div>
+      </header>
+      
+      <nav class="nav">
+        <a href="#">섬유유연제</a>
+        <a href="#">바디워시</a>
+        <a href="#">핸드크림</a>
+        <a href="#">세제</a>
+      </nav>
+      <nav class="nav">
+        <a href="#">고체</a>
+        <a href="#">액체</a>
+      </nav>
+      
+      <div class="content">
+        <div class="product">
+          <img src="https://shopping-phinf.pstatic.net/main_6205084/6205084952.20220510164038.jpg?type=f640" alt="상품 이미지">
+          <h3>P&G 고농축 다우니 레몬그라스와 달콤한 라일락향 1L </h3>
+          <p>싱그럽고 상쾌한 향의 섬유유연제</p>
+          <p>최저가 : 3580원</p>
+          <button class="add-to-cart"> 사용후기 보기</button>
+          <div class="product-details">
+            <img src="phttps://shopping-phinf.pstatic.net/main_6205084/6205084952.20220510164038.jpg?type=f640" alt="상품 이미지">
+            <div>
+              <h3>P&G 고농축 다우니 레몬그라스와 달콤한 라일락향 1L</h3>
+              <p>싱그럽고 상쾌한 향의 섬유유연제</p>
+              <p>최저가 : 3.580원</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product">
+          <img src="https://shopping-phinf.pstatic.net/main_2697766/26977664523.20230419093343.jpg?type=f640" alt="상품 이미지">
+          <h3>유니레버 스너글 초고농축 섬유유연제 허거블 코튼 4L </h3>
+          <p>향긋한 라벤더와 어우러진 꽃향으로 부드럽고 포근한 향의 섬유유연제</p>
+          <p>최저가 : 12.840원</p>
+          <button class="add-to-cart">사용후기 보기</button>
+          <div class="product-details">
+            <img src="https://shopping-phinf.pstatic.net/main_2697766/26977664523.20230419093343.jpg?type=f640" alt="상품 이미지">
+            <div>
+              <h3>유니레버 스너글 초고농축 섬유유연제 허거블 코튼 4L</h3>
+              <p>향긋한 라벤더와 어우러진 꽃향으로 부드럽고 포근한 향의 섬유유연제</p>
+              <p>최저가 : 12.840원</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product">
+          <img src="https://shopping-phinf.pstatic.net/main_2496304/24963049525.20201124150249.jpg?type=f640" alt="상품 이미지">
+          <h3>피죤 리치퍼퓸 고농축 섬유유연제 오션후레쉬 1L</h3>
+          <p>상쾌한 시트러스 향의 섬유유연제</p>
+          <p>최저가 : 2.730원</p>
+          <button class="add-to-cart">사용후기 보기</button>
+          <div class="product-details">
+            <img src="https://shopping-phinf.pstatic.net/main_2496304/24963049525.20201124150249.jpg?type=f640" alt="상품 이미지">
+            <div>
+              <h3>피죤 리치퍼퓸 고농축 섬유유연제 오션후레쉬 1L</h3>
+              <p>상쾌한 시트러스 향의 섬유유연제</p>
+              <p>최저가 : 2.730원</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="header"></div>
+         <div class="product-details">
+            <div><img src="${product.querySelector('img').src}"></div>
+                <div>
+                <h3>${product.querySelector('h3').innerText}</h3>
+                <p>${product.querySelector('p:nth-of-type(1)').innerText}</p>
+                <p>${product.querySelector('p:nth-of-type(2)').innerText}</p>
+             </div>
+         </div>
+      
+      <footer class="footer">
+        <p>&copy; 2023 내 향.<br> 웹사이트 관련 문의: 112</p>
+      </footer>
+    
+
+    <!-- JS -->
+    <script src="JS/script.js"></script>
+    
+</body>
+</html>
